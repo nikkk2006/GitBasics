@@ -50,6 +50,10 @@
 27. git merge <BRANCH_NAME> - объединение ветки.
 28. git branch -D <BRANCH_NAME> - удаление ветки BRANCH_NAME.
 29. git branch -d <BRANCH_NAME> - удаление ветки в случае если она объединена с другой.
+30. git merge --no-ff <BRANCH_NAME> - слияние веток с отключением fast forward
+31. git config [--global] merge.ff false - отключение слияния fast forward навсегда.
+32. git log --graph - отображение коммитов и веток звёздочками и палочками(типо граф).
+33. git push --force - форсированный пуш.
 
 ## Хеш
 **Хеш - это идентификатор коммита.** Каждый коммит имеет свой уникальный хеш, состоящий из 40 символов.
