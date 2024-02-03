@@ -2,7 +2,7 @@
 
 **Основные команды Git Bash:**
 1.  **pwd** - узнать где я сейчас
-2. __ cd ~ __ - перейти к домашней директории
+2.  cd ~ - перейти к домашней директории
 3.  **cd c:/** - перейти в корневую директорию
 4.  **cd** - сменить директорию
 5.  **cd ..** - вернуться в род. директорию
@@ -20,41 +20,41 @@
 17. **echo " " > file** - перезаписывает файл на то, что написано в кавычках
 
 **Основные команды Git:**
-1.  git version - версия git
-2.  git config --global user.name/user.email " "/
-3.  git config list - содержимое файла .gitconfig
-4.  git init - создание git репозитория
-5.  rm -rf .git - разгитить папку
-6.  git status - проверить состояние репозитория
-7.  git add - добавление файла в отслеживание
-8.  git add --all - добавляет все файлы для отслеживания
-9.  git add . - добавление всей папки в отслежку
-10. git commit -m " " - добавление коммита с комментом
-11. git log - история коммитов
-12. ssh-keygen -t ed25519 -C "<my_email>" - генерация ssh-пары
-13. clip < ~/.ssh/id_rsa.pub - копирование ssh-ключа
-14. git remote add origin <SSH_from_GITHUB> - привязка удалённого репозитория к локальному
-15. git push -u origin master - загружает на удаленный репозиторий коммит,
+1.  **git version** - версия git
+2.  **git config --global user.name/user.email " "/ **
+3.  **git config list** - содержимое файла .gitconfig
+4.  **git init** - создание git репозитория
+5.  **rm -rf .git** - разгитить папку
+6.  **git status** - проверить состояние репозитория
+7.  **git add** - добавление файла в отслеживание
+8.  **git add --all** - добавляет все файлы для отслеживания
+9.  **git add .** - добавление всей папки в отслежку
+10. **git commit -m " "** - добавление коммита с комментом
+11. **git log** - история коммитов
+12. **ssh-keygen -t ed25519 -C "<my_email>"** - генерация ssh-пары
+13. **clip < ~/.ssh/id_rsa.pub** - копирование ssh-ключа
+14. **git remote add origin <SSH_from_GITHUB>** - привязка удалённого репозитория к локальному
+15. **git push -u origin master** - загружает на удаленный репозиторий коммит,
 в первый раз эту команду надо вызывать с флагом -u(связывает локальную ветку с удалённой) и origin, master
-16. git log --oneline - история коммитов, но в одну строку
-17. git commit -a -m " " - добавление коммита с комментом минуя staging area
-18. git diff - сравнивает поселднюю версию закоммиченного файла с той, что в modified
-19. git diff --staged - покажет изменения в staged-файлах от-но последних закоммиченных версий
-20. git diff hash_first hash_second - покажет разницу между двумя коммитами
-21. git status --ignored - проверить состояние репозитория с игрорируемыми файлами
-22. git clone <SSH> - клонирует удалённый репозиторий.
-23. git branch - узнать кол-во веток(звёздочкой отмечено в какой ветке я нахожусь).
-24. git branch <BRANCH_NAME> - создать ветку с именем BRANCH_NAME.
-25. git checkout <BRANCH_NAME> - перейти в ветку с именем BRANCH_NAME.
-26. git checkout -b <BRANCH_NAME> - создать ветку BRANCH_NAME и перейти в неё.
-27. git merge <BRANCH_NAME> - объединение ветки.
-28. git branch -D <BRANCH_NAME> - удаление ветки BRANCH_NAME.
-29. git branch -d <BRANCH_NAME> - удаление ветки в случае если она объединена с другой.
-30. git merge --no-ff <BRANCH_NAME> - слияние веток с отключением fast forward
-31. git config [--global] merge.ff false - отключение слияния fast forward навсегда.
-32. git log --graph - отображение коммитов и веток звёздочками и палочками(типо граф).
-33. git push --force - форсированный пуш.
-34. git push --set-upstream origin HEAD - тоже самое что и git push -u origin <BRANCH_NAME,
+16. **git log --oneline** - история коммитов, но в одну строку
+17. **git commit -a -m " "** - добавление коммита с комментом минуя staging area
+18. **git diff** - сравнивает поселднюю версию закоммиченного файла с той, что в modified
+19. **git diff --staged** - покажет изменения в staged-файлах от-но последних закоммиченных версий
+20. **git diff hash_first hash_second** - покажет разницу между двумя коммитами
+21. **git status --ignored** - проверить состояние репозитория с игрорируемыми файлами
+22. **git clone <SSH>** - клонирует удалённый репозиторий.
+23. **git branch** - узнать кол-во веток(звёздочкой отмечено в какой ветке я нахожусь).
+24. **git branch <BRANCH_NAME>** - создать ветку с именем BRANCH_NAME.
+25. **git checkout <BRANCH_NAME>** - перейти в ветку с именем BRANCH_NAME.
+26. **git checkout -b <BRANCH_NAME>** - создать ветку BRANCH_NAME и перейти в неё.
+27. **git merge <BRANCH_NAME>** - объединение ветки.
+28. **git branch -D <BRANCH_NAME>** - удаление ветки BRANCH_NAME.
+29. **git branch -d <BRANCH_NAME>** - удаление ветки в случае если она объединена с другой.
+30. **git merge --no-ff <BRANCH_NAME>** - слияние веток с отключением fast forward
+31. **git config [--global] merge.ff false** - отключение слияния fast forward навсегда.
+32. **git log --graph** - отображение коммитов и веток звёздочками и палочками(типо граф).
+33. **git push --force** - форсированный пуш.
+34. **git push --set-upstream origin HEAD** - тоже самое что и git push -u origin <BRANCH_NAME,
 где --set-upstream длинная запись флага -u, HEAD - синоним текущей ветки.
 
 ## Хеш
